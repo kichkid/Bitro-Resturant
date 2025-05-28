@@ -63,3 +63,56 @@ function addToCart(name, price, image) {
     localStorage.clear();
     window.location.href = "bookatable.html";
   }
+
+
+  
+    
+      document.addEventListener('DOMContentLoaded', function() {
+        new Swiper('.menuSwiper', {
+          loop: true,
+          speed: 800,
+          grabCursor: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          slidesPerView: 1,
+          spaceBetween: 20,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
+          },
+          breakpoints: {
+            576: {  // Small devices
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            768: {  // Medium devices
+              slidesPerView: 2,
+              spaceBetween: 25
+            },
+            992: {  // Large devices
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            1200: {  // Extra large devices
+              slidesPerView: 4,
+              spaceBetween: 30
+            }
+          }
+        });
+      });
+    
+    
+    
+
+
+
+
+
+
+
+
+
+

@@ -223,3 +223,81 @@ a{
         opacity: 0.7;
     }
 }
+.hover-shadow {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .hover-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  }
+  .transition-all {
+    transition: all 0.3s ease;
+  }
+  .swiper-slide {
+    height: auto;
+  }
+
+/* Base Swiper Slide Styling */
+.swiper-slide {
+    height: auto; /* Let content determine height */
+    display: flex; /* For better content alignment */
+    transition: all 0.3s ease; /* Smooth hover effects */
+    padding: 5px; /* Spacing between slides */
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  /* Card Container within Slide */
+  .swiper-slide .card {
+    width: 100%; /* Fill the slide width */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Keep content contained */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  /* Hover Effects */
+  .swiper-slide:hover .card {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow on hover */
+  }
+  
+  /* Image Styling */
+  
+  /* Card Body Styling */
+  .swiper-slide .card-body {
+    padding: 20px 15px; /* Comfortable spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Title Styling */
+  .swiper-slide .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Text Styling */
+  .swiper-slide .card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Pushes button to bottom */
+  }
+  
+  /* Button Styling */
+  .swiper-slide .btn {
+    font-size: 0.85rem;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  /* Active Slide Styling (optional) */
+  .swiper-slide.swiper-slide-active .card {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
