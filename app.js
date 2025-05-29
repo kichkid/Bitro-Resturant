@@ -103,6 +103,7 @@ function addToCart(name, price, image) {
           }
         });
       });
+
     
     
     
